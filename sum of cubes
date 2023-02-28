@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int sum_of_cube(int a,int b,int c);
+
+
+int main(void)
+{int a,b,c;
+ printf("Enter the value of a= ");
+ scanf("%d",&a);
+ printf("Enter the value of b= ");
+ scanf("%d",&b);
+ printf("Enter the value of c= ");
+ scanf("%d",&c);
+ sum_of_cube(a,b,c);
+ 
+ return 0;
+}
+
+int sum_of_cube(int a,int b,int c)
+{
+    int sum_of_cube;
+    sum_of_cube=(a*a*a)+(b*b*b)+(c*c*c);
+    printf("The sum of the cubes of three numbers are %d.\n",sum_of_cube);
+    return sum_of_cube;
+}
